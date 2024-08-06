@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  padding: 40px 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.header {
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.team {
+  background: #fff;
+  width: 100%;
+  max-width: 800px; /* Anda bisa menyesuaikan sesuai kebutuhan */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.3); /* Shadow yang lebih hitam */
+  margin: 50px auto; /* Untuk membuat div team berada di tengah secara horizontal */
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 100px;
+  margin: 10px auto;
+}
+
+.members {
+  display: flex;
+  justify-content: center; /* Untuk menempatkan anggota tim di tengah secara horizontal */
+  flex-wrap: wrap; /* Untuk memastikan bahwa anggota tim terlipat dengan baik pada layar kecil */
+}
+
+.team-mem {
+  margin: 8px;
+  text-align: center;
+}
+
+.img-pp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px auto; /* Untuk membuat gambar berada di tengah */
+}
+
+h4,
+p {
+  text-align: center;
+  font-size: 12px;
+  margin: 7px;
+}
+
+.gallery {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border: 1px solid #eee;
+  box-shadow: 1px 2px 3px #ddd;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery img {
+    height: 170px;
+  }
+}
